@@ -1,10 +1,11 @@
 <script>
-	import Footer from './footer.svelte';
-import ProductCategory from './product-category.svelte';
-	import Product1 from './product1.svelte';
-	import Product2 from './product2.svelte';
-	import Product3 from './product3.svelte';
-	import Story from './story.svelte';
+	import Footer from '../lib/components/footer.svelte';
+	import ProductCategory from '../lib/components/product-category.svelte';
+	import Product1 from '../lib/components/product1.svelte';
+	import Product2 from '../lib/components/product2.svelte';
+	import Product3 from '../lib/components/product3.svelte';
+	import Separator from '../lib/components/separator.svelte';
+	import Story from '../lib/components/story.svelte';
 </script>
 
 <div class="bg-hero-mobile h-[650px] w-screen bg-cover">
@@ -26,31 +27,25 @@ import ProductCategory from './product-category.svelte';
 		<button class="button1 px-10 py-5 text-lg mt-10">see product</button>
 	</div>
 </div>
-<div class="w-screen h-[12rem] bg-white" />
-
+<Separator size="12" />
 <ProductCategory
 	image="assets\product-xx99-mark-one-headphones\mobile\preview.png"
 	text="headphones"
 />
-
-<div class="w-screen h-[12rem] bg-white" />
-
+<Separator size="12" />
 <ProductCategory image="assets\product-zx7-speaker\mobile\preview.png" text="speaker" />
-
-<div class="w-screen h-[12rem] bg-white" />
-
+<Separator size="12" />
 <ProductCategory image="assets\product-yx1-earphones\mobile\preview.png" text="earphones" />
-
-<div class="w-screen h-[8rem] bg-white" />
-
+<Separator size="8" />
 <Product1 />
-<div class="w-screen h-[2rem] bg-white" />
+<Separator size="2" />
 <Product2 />
-<div class="w-screen h-[2rem] bg-white" />
+<Separator size="2" />
 <Product3 />
-<div class="w-screen h-[8rem] bg-white" />
+<Separator size="8" />
 <Story />
-<div class="w-screen h-[8rem] bg-white" />
-<Footer/>
+<Separator size="8" />
+<Footer />
+
 <style>
 </style>
